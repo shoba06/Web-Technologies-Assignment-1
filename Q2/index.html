@@ -1,1 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Admission Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Student Admission Portal</h1>
+        <p>College Admission Registration</p>
+        <span>Start your journey towards a successful future</span>
+    </header>
+
+
+    <main>
+
+        <!-- ================= STUDENT ADMISSION FORM ================= -->
+
+        <section class="form-section">
+
+            <div class="title">
+                <h2>Student Admission Form</h2>
+                <p>Please enter your details carefully</p>
+            </div>
+
+
+            <form>
+
+                <!-- PERSONAL INFORMATION -->
+
+                <h3>Personal Information</h3>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@gmail.com"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter 10 digit phone number"
+                            pattern="[0-9]{10}"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <!-- GENDER -->
+
+                <div class="form-group">
+
+                    <label>Gender</label>
+
+                    <div class="radio-group">
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Male"
+                                required
+                            >
+                            Male
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Female"
+                            >
+                            Female
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="Other"
+                            >
+                            Other
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACADEMIC INFORMATION -->
+
+                <h3>Academic Information</h3>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="course">
+                            Select Course
+                        </label>
+
+                        <select
+                            id="course"
+                            name="course"
+                            required
+                        >
+
+                            <option value="">
+                                -- Select Course --
+                            </option>
+
+                            <option value="CSE">
+                                B.E. Computer Science and Engineering
+                            </option>
+
+                            <option value="AIML">
+                                B.E. Artificial Intelligence and Machine Learning
+                            </option>
+
+                            <option value="ECE">
+                                B.E. Electronics and Communication Engineering
+                            </option>
+
+                            <option value="EEE">
+                                B.E. Electrical and Electronics Engineering
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="marks">
+                            Higher Secondary Percentage
+                        </label>
+
+                        <input
+                            type="number"
+                            id="marks"
+                            name="marks"
+                            min="0"
+                            max="100"
+                            step="0.01"
+                            placeholder="Enter percentage"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- ADDRESS -->
+
+                <div class="form-group">
+
+                    <label for="address">
+                        Address
+                    </label>
+
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="5"
+                        placeholder="Enter your complete address"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- ADDITIONAL INFORMATION -->
+
+                <h3>Additional Information</h3>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="photo">
+                            Upload Photograph
+                        </label>
+
+                        <input
+                            type="file"
+                            id="photo"
+                            name="photo"
+                            accept="image/*"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="website">
+                            Portfolio / Website URL
+                        </label>
+
+                        <input
+                            type="url"
+                            id="website"
+                            name="website"
+                            placeholder="https://example.com"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- DECLARATION -->
+
+                <div class="checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="declaration"
+                        name="declaration"
+                        required
+                    >
+
+                    <label for="declaration">
+                        I declare that the information provided
+                        above is correct.
+                    </label>
+
+                </div>
+
+
+                <!-- BUTTONS -->
+
+                <div class="buttons">
+
+                    <button type="submit">
+                        Submit Application
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="reset"
+                    >
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+
+
+        <!-- ================= COLLEGE INFORMATION ================= -->
+
+        <section class="college-section">
+
+            <div class="title">
+
+                <h2>College Information</h2>
+
+                <p>
+                    Explore our campus and admission information
+                </p>
+
+            </div>
+
+
+            <div class="media-grid">
+
+
+                <!-- COLLEGE CAMPUS -->
+
+                <div class="media-card">
+
+                    <h3>Our College Campus</h3>
+
+                    <div class="campus">
+
+                        <div class="college-building">
+
+                            <div class="college-name">
+                                OUR COLLEGE
+                            </div>
+
+                            <div class="windows">
+
+                                <div class="window"></div>
+                                <div class="window"></div>
+                                <div class="window"></div>
+                                <div class="window"></div>
+                                <div class="window"></div>
+
+                            </div>
+
+                            <div class="door">
+                                ADMISSION
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Our college provides modern classrooms,
+                        laboratories, library facilities and a
+                        student-friendly campus environment.
+                    </p>
+
+                </div>
+
+
+
+                <!-- VIDEO -->
+
+                <div class="media-card">
+
+                    <h3>College Campus & Admission Video</h3>
+
+                    <video
+                        controls
+                        preload="metadata"
+                        width="100%"
+                    >
+
+                        <source
+                            src="./college-admission.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support
+                        HTML5 video.
+
+                    </video>
+
+                    <p>
+                        Watch the video to learn more about
+                        our college campus and admission
+                        facilities.
+                    </p>
+
+                </div>
+
+
+
+                <!-- AUDIO -->
+
+                <div class="media-card audio-card">
+
+                    <h3>Admission Welcome Message</h3>
+
+                    <audio
+                        controls
+                        preload="metadata"
+                        style="width: 100%;"
+                    >
+
+                        <source
+                            src="./admission-welcome.mp3"
+                            type="audio/mpeg"
+                        >
+
+                        Your browser does not support
+                        HTML5 audio.
+
+                    </audio>
+
+                    <p>
+                        Listen to the admission welcome
+                        message before completing your
+                        application.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>© 2026 Student Admission Portal</p>
+
+        <span>Web Technology Assignment</span>
+
+    </footer>
+
+</body>
+
+</html>
