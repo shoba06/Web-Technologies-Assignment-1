@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Supermarket Billing System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Supermarket Billing System</h1>
+            <p>Enter product details to generate your bill</p>
+        </header>
+
+
+        <main class="billing-card">
+
+            <h2>Product Details</h2>
+
+
+            <div class="product">
+
+                <div class="product-number">01</div>
+
+                <div class="field">
+                    <label>Product Name</label>
+                    <input type="text" id="product1"
+                           placeholder="Enter product name">
+                </div>
+
+                <div class="field">
+                    <label>Quantity</label>
+                    <input type="number" id="quantity1"
+                           min="1"
+                           placeholder="0">
+                </div>
+
+                <div class="field">
+                    <label>Unit Price (₹)</label>
+                    <input type="number" id="price1"
+                           min="0"
+                           placeholder="0.00">
+                </div>
+
+            </div>
+
+
+            <div class="product">
+
+                <div class="product-number">02</div>
+
+                <div class="field">
+                    <label>Product Name</label>
+                    <input type="text" id="product2"
+                           placeholder="Enter product name">
+                </div>
+
+                <div class="field">
+                    <label>Quantity</label>
+                    <input type="number" id="quantity2"
+                           min="1"
+                           placeholder="0">
+                </div>
+
+                <div class="field">
+                    <label>Unit Price (₹)</label>
+                    <input type="number" id="price2"
+                           min="0"
+                           placeholder="0.00">
+                </div>
+
+            </div>
+
+
+            <div class="product">
+
+                <div class="product-number">03</div>
+
+                <div class="field">
+                    <label>Product Name</label>
+                    <input type="text" id="product3"
+                           placeholder="Enter product name">
+                </div>
+
+                <div class="field">
+                    <label>Quantity</label>
+                    <input type="number" id="quantity3"
+                           min="1"
+                           placeholder="0">
+                </div>
+
+                <div class="field">
+                    <label>Unit Price (₹)</label>
+                    <input type="number" id="price3"
+                           min="0"
+                           placeholder="0.00">
+                </div>
+
+            </div>
+
+
+            <div class="buttons">
+
+                <button onclick="generateBill()">
+                    Generate Bill
+                </button>
+
+                <button class="reset" onclick="resetBill()">
+                    Reset
+                </button>
+
+            </div>
+
+
+            <!-- Bill Output -->
+
+            <div id="bill" class="bill">
+
+                <h2>Bill Summary</h2>
+
+                <div class="bill-header">
+                    <span>Product</span>
+                    <span>Qty</span>
+                    <span>Unit Price</span>
+                    <span>Amount</span>
+                </div>
+
+
+                <div id="billItems"></div>
+
+
+                <div class="summary">
+
+                    <div>
+                        <span>Subtotal</span>
+                        <strong id="subtotal">₹0.00</strong>
+                    </div>
+
+                    <div>
+                        <span>Discount</span>
+                        <strong id="discount">₹0.00</strong>
+                    </div>
+
+                    <div class="final">
+                        <span>Final Payable Amount</span>
+                        <strong id="finalAmount">₹0.00</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <footer>
+            Supermarket Billing System • JavaScript
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
